@@ -1,0 +1,2361 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --yellow-font-color:  rgba(226, 204, 0, 1);
+    --brown-font-color: rgba(200, 176, 94, 1);
+    --dark-brown-font-color: rgba(121, 113, 86, 1);
+    --bayon-font-family: "Bayon";
+    --outfit-font-family: "Outfit";
+    --main-font-size-1200px: 100px;
+    --para-font-size-1200px: 26px;
+    --main-font-size-1024px: 70px;
+    --para-font-size-1024px: 26px;
+    --main-font-size-768px: 60px;
+    --para-font-size-768px: 24px;
+    --main-font-size-425px: 50px;
+    --para-font-size-425px: 20px;
+}
+
+.wrapper{
+    padding: 0 3% 0 3%;
+}
+
+
+
+.main-font{
+    color: var(--yellow-font-color);
+    font-size: var(--main-font-size-1200px);
+    font-family: var(--bayon-font-family);
+    font-weight: lighter;
+    line-height: 90px;
+}
+
+.para-db-font{
+    color: var(--dark-brown-font-color);
+    font-size: var(--para-font-size-1200px);
+    font-family: var(--outfit-font-family);
+    line-height: 26px;
+}
+.para-b-font{
+    color: var(--brown-font-color);
+    font-size: var(--para-font-size-1200px);
+    font-family: var(--outfit-font-family);
+    line-height: 26px;
+}
+
+.web-button{
+    width: 200px;
+    height: 55px;
+    font-family: var(--bayon-font-family);
+    color: white;
+    text-transform: uppercase;
+    font-size: 29px;
+    background-color: var(--brown-font-color);
+    border-radius: 15px;
+    border: 0px;
+    font-weight: 400;
+    box-shadow: 0px 30px 36.1px -4px rgba(148, 148, 148, 0.4);
+    text-shadow: 4px 4px 3px rgba(148, 148, 148, 0.4);
+    transition: all 500ms;
+    cursor: pointer;
+}
+.web-button:hover{
+    background-color: white;
+    color: var(--brown-font-color) ;
+    border: 1px solid var(--brown-font-color);
+}
+
+.web-button-white{
+    width: 200px;
+    height: 55px;
+    background-color: white;
+    border: 3px solid var(--brown-font-color);
+    font-family: var(--bayon-font-family);
+    border-radius: 10px;
+    font-size: var(--para-font-size-1200px);
+    color: var(--brown-font-color);
+    cursor: pointer;
+}
+.web-button-white:hover{
+    border: 1px solid var(--brown-font-color);
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+/* Nav Bar Code */
+.nav-inner{
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3% 0 3%;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: var(--outfit-font-family);
+    text-transform: uppercase;
+
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--dark-brown-font-color);
+    font-size: 20px;
+}
+
+.nav-hamburger{
+    font-size: 35px;
+    color: var(--dark-brown-font-color);
+    visibility: hidden;
+}
+
+.nav-logo img{
+    width: 100%;
+}
+.mobile-nav-links{
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+.mobile-nav-links li {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    list-style: none;
+}
+.mobile-nav-links li a{
+    text-decoration: none;
+    color: var(--dark-brown-font-color);
+    font-size: 20px;
+    font-family: var(--outfit-font-family);
+    text-transform: uppercase;
+    transition: all 500ms;
+}
+.mobile-nav-links li:hover{
+    background-color: gray;
+}
+.fixed{
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+    top: 0;
+}
+.nav-select{
+    width: 20px;
+    border: 0px;
+}
+
+/*************************************************/
+.angle-down{
+    padding: 10px ;
+}
+.inside_items{
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 48%;
+    z-index: 4;
+}
+  .inside_items ul{
+    display: block;
+    
+  }
+  .inside_items li{
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: white;
+    transition: all 500ms;
+    border-top: 1px solid grey;
+  }
+  .inside_items li:hover{
+    background-color: rgba(200, 176, 94, 1);
+  }
+  li:hover .inside_items{
+    display: block;
+  }
+  .inside_items a{
+      text-decoration: none;
+      font-size: 25px;
+  }
+  .last-nav-list-item{
+    border-bottom: 3px solid var(--yellow-font-color);
+  }
+
+  /* -------------------------------------------- */
+
+  .inside_items-2{
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 67%;
+    z-index: 4;
+  }
+  .inside_items-2 ul{
+    display: block;
+  }
+  .inside_items-2 li{
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: white;
+    transition: all 500ms;
+    border-top: 1px solid grey;
+    border-bottom: 3px solid var(--yellow-font-color);
+  }
+  .inside_items-2 li:hover{
+    background-color: rgba(200, 176, 94, 1);
+  }
+  li:hover .inside_items-2{
+    display: block;
+  }
+  .inside_items-2 a{
+      text-decoration: none;
+      font-size: 25px;
+  }
+
+  /********************************************************/
+/* Nav End */
+
+/* Hero Section Start */
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    background-image: url(../images/hero-section-bg.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+    height: 900px;
+    padding: 0 3% 0 3%;
+}
+
+
+.hero-section-img img {
+    width: 100%;
+}
+
+img.vert-move {
+    -webkit-animation: mover 3s infinite  alternate;
+    animation: mover 3s infinite  alternate;
+}
+
+@keyframes mover {
+    0% { transform: translate(0, 0); }
+    50% { transform: translateY(5px); }
+    100% { transform: translate(6px, 6px); }
+}
+.hero-section-text{
+    padding: 0 0px 0 0px ;
+}
+.hero-section-text h1{
+    color: var(--yellow-font-color);
+    font-size: 200px;
+    font-family: var(--bayon-font-family);
+    text-transform: uppercase;
+    line-height: 160px;
+    font-weight: lighter;
+    margin-top: 10px;
+
+}
+
+.hero-section-text p{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: var(--para-font-size-1200px);
+    text-align: left;
+    margin-top: 20px;
+    line-height: 22px;
+
+}
+.hero-section-text button{
+    margin-top: 100px;
+}
+
+.hero-para-brown{
+    color: var(--brown-font-color);
+    font-size: 34px;
+}
+.hero-title{
+    font-size: 180px ;
+    color: var(--yellow-font-color) ;
+    line-height: 120px;
+}
+/* Hero Section End */
+
+/* Why choose section?  Start*/
+.choose-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 0px 0;
+    padding: 0 3% 0 3%
+}
+.choose-text{
+    padding: 0 10px 0 0px;
+}
+
+.choose-text p{
+    margin: 15px 0;
+    line-height: 24px;
+    
+}
+.choose-text button{
+    margin-top: 100px;
+}
+.choose-img{
+    align-self: center;
+    justify-self: center;  
+    padding: 10px;
+}
+.choose-img img{
+    width: 100%;
+}
+
+/* Why choose section?  End*/
+
+/* Mission Section */
+
+.mission-bg{
+    background-image: url(../images/Background-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin-top: 150px;
+}
+.mission-section{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40%;
+    padding: 0 3%;
+
+}
+.grid-section-part-1{
+    flex-basis: 50%;
+
+}
+.grid-section-part-2{
+    flex-basis: 50%;
+    text-align: center;
+}
+.grid-section-part-2 img{
+    width: 80%;
+    /* box-shadow: 0px 48px 60px -27px rgba(136, 136, 136, 0.35); */
+
+}
+.grid-section-part-1-text h1{
+    color: white;
+    margin: 5% auto;
+}
+
+.grid-section-part-1 button{
+    margin-top: 60px;
+}
+
+
+
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/* Meal Section Start */
+
+.meal-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 150px 150px 0 150px;
+    gap: 20px;
+
+}
+.meal-cart{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(224, 224, 224, 1);
+    border-radius: 10px;  
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 48px 60px -27px rgba(136, 136, 136, 0.35);
+
+
+}
+
+.meal-cart h1{
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-size: var(--main-font-size-1200px);
+    line-height: 80px;
+    width: 90%;
+    margin: 20px auto;
+    font-weight: lighter;
+
+}
+.meal-cart p{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    width: 80%;
+    margin: 20px auto;
+    font-size: var(--para-font-size-1200px);
+    /* line-height: 24px; */
+}
+.meal-cart button{
+    margin-bottom: 20px;
+}
+
+
+/* Meal Section End */
+
+/* No Section Start */
+.no-section{
+    display: flex;
+    background-image: url(../images/Background\(2\).png);
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0 0 0;
+    gap: 10%;
+}
+.no-section-img{
+    padding: 20px;
+}
+.no-section-img img{
+    width: 100%;
+}
+
+/* No Section End */
+
+/* Latest News Start */
+.news-section{
+    margin: 150px 0 0 0 ;
+    display: flex;
+    justify-content: space-around;
+}
+.news-section-text h1{
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-size: var(--main-font-size-1200px);
+    width: 70%;
+    line-height: 100px;
+    font-weight: lighter;
+}
+.news-section-text p{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: var(--para-font-size-1200px);
+}
+.news-section button{
+    align-self: flex-end;
+}
+
+/* Latest News End */
+
+/* News Letters Carts */
+
+.news-letters-carts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 150px 140px 0px 140px  ;
+    gap: 40px;
+}
+.news-carts-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.news-carts-text{
+    padding: 10px;
+}
+.news-carts{
+    padding: 10px;
+    border: 3px solid rgba(224, 224, 224, 1);
+    box-shadow: 0px 48px 60px -27px rgba(136, 136, 136, 0.35);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.news-carts h2{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    margin: 15px 0;
+    font-size: 28px;
+    text-align: left;
+    
+}
+
+.news-carts p{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    width: 90%;
+    font-size: 20px;
+    text-align: left;
+}
+.news-carts-text button{
+    margin: 20px auto;
+}
+
+.new-letters-carts{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* New Letter End */
+
+
+/* Footer Start */
+
+.footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color:  rgba(200, 176, 94, 1);
+    margin-top: 100px;
+    padding: 80px 3% 80px 3%;
+}
+.footer-main h1{
+    color: white;
+    font-family: var(--outfit-font-family);
+    font-size: var(--para-font-size-1200px);
+    text-transform: uppercase;
+
+}
+.footer-main ul li{
+    list-style: none;
+}
+.footer-links{
+    margin-top: 20px;
+}
+.footer-main a{
+    text-decoration: none;
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: 20px;
+}
+.footer-main p{
+    font-family: var(--outfit-font-family);
+    color: var(--dark-brown-font-color);
+    font-size: 20px;
+}
+.footer-part-4-inner{
+    margin-top: 20px;
+}
+.footer-part-4-inner p{
+    margin: 10px 0;
+    width: 80%;
+}
+
+
+.footer-part-1{
+    flex-basis: 20%;
+    align-self: flex-start;
+
+}
+.footer-part-2{
+    flex-basis: 15%;
+}
+.footer-logo img{
+    width: 60%;
+}
+
+.footer-part-3{
+   flex-basis: 25%;
+}
+.footer-part-4{
+    flex-basis: 25%;
+}
+
+.footer-social-icons a{
+    margin: 2px;
+}
+
+
+.footer-social-icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 45%;
+}
+
+.footer-last-portion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  rgba(200, 176, 94, 1);
+    padding: 30px 3% 30px 3%;
+    border-top: 1px solid white;
+}
+
+.footer-last-portion-part-1 p{
+    font-family: var(--outfit-font-family);
+    font-size: 16px;
+    color: white;
+}
+.footer-last-portion-part-2 a{
+    color: white;
+    font-family: var(--outfit-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 20px 0 20px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.business-bg{
+    background-image: url(../images/business-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section-business{
+    margin: 8% auto;
+    width: 100%;
+}
+
+.hero-section-business h1{
+    font-size: 200px;
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-weight: lighter;
+    line-height: 140px;
+}
+.hero-section-business span{
+    font-size: 170px;
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-weight: lighter;
+    line-height: 155px;
+}
+
+.hero-section-business{
+    width: 85%;
+    margin-left: 0;
+}
+.content-section h1{
+   line-height: 150px ;
+   color: var(--brown-font-color);
+}
+.content-section p{
+    width: 65%;
+    margin: 3% 0;
+}
+
+/* --------------------------------------------------COMPANY------------------------------------------------------------------ */
+
+.hero-section-company{
+    background-image: url(../images/company/company-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--bayon-font-family);
+    color: white;
+    height: 500px;
+}
+.hero-company-text{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3% 0 3%;
+}
+.hero-company-text ul{
+    list-style-position: inside;
+    font-size: 40px;
+    font-family: var(--outfit-font-family);
+}
+
+.hero-section-company h1{
+    font-size: 200px;
+    line-height: 150px;
+    font-weight: lighter;
+    margin-left: 0;
+}
+
+.company-mid-section{
+    display: flex;
+    margin-top: 150px;
+}
+.company-mid-section-1{
+    flex-basis: 50%;
+    padding: 3% 3% 3% 3%;
+}
+.company-mid-section-1 h1{
+    width: 98%;
+}
+.company-mid-section-1 ul{
+    list-style-position: inside;
+}
+.company-mid-section-1 p{
+    margin: 3% 0;
+}
+
+.company-mid-section-2{
+    flex-basis: 50%;
+}
+.company-mid-section-2 img{
+    width: 70%;
+    margin: 0 0% 0 15%;
+}
+
+
+.company-approach-section{
+    background-image: url(../images/company/Background-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 150px;
+}
+
+.company-approach-text{
+    padding: 0 3% 0 3%;
+    margin-top: -46.5%;
+    width: 50%;
+
+}
+.company-approach-text h1{
+    margin: 10% auto;
+    color: white;
+}
+
+.advantage-process-section{
+display: flex;
+margin-top: 200px;
+padding: 10% 3% 0 3%;
+background-image: url(../images/company/Background-6.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.advantage-process-part-1{
+    flex-basis: 45%;
+}
+.advantage-process-part-2{
+    flex-basis: 55%;
+}
+.advantage-process-part-2 img{
+    width: 100%;
+}
+.advantage-process-part-1 h2{
+    font-size: 55px;
+    line-height: 55px;
+}
+.advantage-process-part-1 p{
+    margin: 40px auto;
+}
+
+/* ---------------------------------------------------------------Brand----------------------------------------------- */
+
+.hero-brand{
+    background-size: cover;
+    background-image: url(../images/brand/hero-brand.png);
+    background-repeat: no-repeat;
+    height: 600px;
+
+}
+.hero-brand-text{
+    font-family: var(--bayon-font-family);
+    color: white;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hero-brand-text h1{
+    font-size: 190px;
+    line-height: 160px;
+    font-weight: lighter;
+}
+.hero-brand-text ul{
+    list-style-position: inside;
+}
+.hero-brand-text h2{
+    font-family: var(--outfit-font-family);
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.chef-meal-section{
+    background-image: url(../images/brand/business-bg.png);
+    margin-top: 150px;
+}
+.chef-meal-inner {
+    display: flex;
+}
+.chef-meal-part-1{
+    flex-basis: 50%;
+}
+.chef-meal-part-1 ul{
+    list-style-position: inside;
+    font-family: var(--outfit-font-family);
+    font-size: 50px;
+    color: var(--dark-brown-font-color);
+    margin: 20px auto;
+}
+.chef-meal-part-1 button{
+    margin: 40px auto;
+}
+.chef-meal-part-2{
+    flex-basis: 50%;
+}
+/* Brands Slider */
+.chef-meal-inner-slider .slider {
+    width: 680px;
+    margin: -395px auto auto -55px;
+    text-align: center;
+    padding: 0px;
+
+}
+/* .slider .parent-slide {
+    padding: 15px;
+} */
+.chef-meal-inner-slider .slider img {
+    display: block;
+    margin: auto;
+}
+
+.chef-meal-arrow{
+    margin: -100px auto auto auto;
+}
+.chef-meal-part-2 button{
+    margin: -150px auto auto 215px;
+    float: left;
+}
+
+.chef-meal-part-2 h3{
+    position: relative;
+    width: 200px;
+    top: -160px;
+    left: 205px;
+    font-family: var(--outfit-font-family);
+    font-size: 30px;
+    color: var(--dark-brown-font-color);
+}
+
+.key-advantage-section{
+    display: flex;
+    margin-top: 150px;
+}
+.key-advantage-part-1{
+    flex-basis: 50%;
+    padding: 0 0 0 3%;
+}
+.key-advantage-part-2{
+    flex-basis: 50%;
+}
+.key-advantage-part-2 img{
+    width: 100%;
+}
+.key-advantage-list{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: var(--para-font-size-1200px);
+    margin: 40px 5% 40px 5%;
+}
+
+.save-time-section{
+    background-image: url(../images/brand/Background-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.save-time-inner{
+    display: flex;
+    align-items: center;
+    
+}
+.save-time-part-1{
+    flex-basis: 50%;
+}
+.save-time-part-1 p{
+    margin: 60px auto;
+}
+.save-time-part-2{
+    flex-basis: 50%;
+}
+.save-time-part-2 img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px;
+}
+
+.menu-sneak-peak{
+    background-image: url(../images/brand/Background-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.menu-sneak-inner{
+padding-top: 100px;
+}
+.menu-sneak-inner p{
+    margin: 30px auto;
+}
+.flex{
+    display: flex;
+}
+.flex-part-1{
+    flex-basis: 50%;
+}
+.flex-part-2{
+    flex-basis: 50%;
+}
+
+
+/* Slider */
+
+.slider-main-part{
+    max-width: 80%;
+    margin: 3% auto;
+  }
+  /* Default slide */
+  .center-slider .slick-slide{
+    /* background-color: #b32532; */
+    /* color: #FFF; */
+    /* width: 300px !important; */
+    height: auto;
+    /* margin: 0 0px 0 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: scale(1.0); */
+    transition: all 0.4s ease-in-out;
+  }
+  .center-slider .slick-slide,
+  .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+    transform: scale(0.9, 0.9);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  
+  .slick-next, .slick-prev{
+    z-index: 5;
+  }
+  .slick-next{
+    right: 15px;
+  }
+  .slick-prev{
+    left: 15px;
+  }
+  .slick-next:before, .slick-prev:before{
+    color: black !important;
+    font-size: 36px !important;
+  }
+
+/* Slider End */
+
+  .how-it-works{
+    background-image: url(../images/brand/Rectangle-6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .how-it-works-inner{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-it-works-inner-part-1 h1{
+    color: white;
+  }
+  .how-it-works-inner-part-1 li{
+    margin: 20px auto;
+    list-style-position: inside;
+    color: rgba(73, 61, 18, 1);
+    width: 90%;
+  }
+
+  .how-it-works-inner-part-1 p{
+    margin: 40px auto;
+    font-weight: 600;
+    width: 90%;
+  }
+
+
+  .plan-price{
+    background-image: url(../images/brand/Background-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+  }
+
+  .plan-price-inner{
+    padding-top: 100px;
+  }
+  .plan-price-carts{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  .price-carts{
+    border: 3px dotted var(--dark-brown-font-color);
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    gap: 30px;
+    background-color: white;
+  }
+
+  .price-carts h1{
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-size: 55px;
+  }
+  .price-carts h3{
+    font-weight: 300;
+    font-size: 40px;
+    font-family: var(--bayon-font-family);
+    color: var(--brown-font-color);
+  }
+  .price-carts h4{
+    font-family: var(--outfit-font-family);
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--dark-brown-font-color);
+  }
+  .price-carts p{
+    width: 90%;
+  }
+
+  .plan-price-bottom-bg{
+    background-image: url(../images/brand/Background\(2\).png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -100px;
+    margin-top: -100px;
+  }
+  .plan-price-bottom-text{
+    padding-top: 180px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .plan-price-bottom-text p{
+    color: rgba(73, 61, 18, 1);
+  }
+  .plan-price-bottom-text h2{
+    font-weight: 700;
+    color: rgba(73, 61, 18, 1);
+    ;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1920px) {
+    .wrapper{
+        padding: 0 15% 0 15%;
+    }
+    .hero-section{
+        padding: 0 15%;
+    }
+    .choose-section {
+        padding: 0 15%;
+    }
+
+    .mission-section {
+        padding: 0 15%;
+        margin-top: -34.50%;
+    }
+    .meal-section {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        justify-content: center;
+        gap: 115px;
+    }
+    .news-section {
+        justify-content: space-between;
+        padding: 0 15%;
+    }
+    .hero-section{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        height: 100vh;
+    }
+    .inside_items{
+        left: 50%;
+        }
+    
+    .inside_items-2{
+        left: 65%;
+    }
+
+    /* --------------------------------------------------COMPANY------------------------------------------------------------------ */
+.hero-section-company{
+    padding: 0 15% 0 15%;
+    }
+    .company-mid-section{
+        padding: 0 15% 0 15%;
+    }
+
+    .advantage-process-section{
+        padding: 0 15% 0 15%;
+    }
+    .company-approach-text {
+        padding: 0 15% 0 15%;
+        margin-top: -28.5%;
+    }
+
+    .company-approach-text h1 {
+        margin: 5% auto;
+    }
+
+
+    .news-letters-carts {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        justify-content: center;
+        gap: 60px;
+    }
+    .footer-main{
+        padding: 80px 15% 80px 15%;
+    }
+
+    .main-font{
+        color: var(--yellow-font-color);
+        font-size: var(--main-font-size-1200px);
+        font-family: var(--bayon-font-family);
+        font-weight: lighter;
+        line-height: 75px;
+    }
+    .nav-inner {
+        justify-content: space-between;
+        padding: 0 15%;
+    }
+    .nav-logo{
+        margin-right: 10%;   
+    }
+
+    .hero-brand {
+        height: 100vh;
+    }
+
+    .menu-sneak-inner {
+        padding-top: 100px;
+    }
+
+    .plan-price-inner {
+        padding-top: 100px;
+    }
+
+    .slider-main-part {
+        max-width: 65%;
+    }
+
+}
+@media screen and (max-width: 1800px) {
+    .mission-section {
+        margin-top: -39.5%;
+        padding: 0 10%;
+    }
+    .inside_items{
+        left: 46%;
+        }
+    
+    .inside_items-2{
+        left: 62%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .mission-section {
+        margin-top: -42.5%;
+        padding: 0 10%;
+    }
+
+}
+@media screen and (max-width: 1600px) {
+    .mission-section {
+        margin-top: -44.5%;
+        padding: 0 10%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .mission-section {
+        margin-top: -46.5%;
+        padding: 0 10%;
+    }
+    
+    .inside_items{
+        left: 46%;
+        }
+    
+    .inside_items-2{
+        left: 66%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper{
+        padding: 0 5% 0 5%;
+    }
+    .nav-inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .nav-links{
+        margin-left: 3%;
+    }
+    .nav-logo img{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .hero-section{
+        padding: 0 5%;
+    }
+    .choose-section {
+        padding: 0 5%;
+    }
+    .mission-section {
+        margin-top: -48%;
+        padding: 0 5%;
+    }
+
+    .news-section {
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .footer-main {
+        padding: 80px 5% 80px 5%;
+    }
+
+
+    /* --------------------------------------------------COMPANY------------------------------------------------------------------ */
+.hero-section-company{
+    padding: 0 5% 0 5%;
+    }
+    .company-mid-section{
+        padding: 0 5% 0 5%;
+    }
+
+    .company-approach-text {
+        padding: 0 5% 0 5%;
+        margin-top: -53%;
+        width: 50%;
+    }
+
+
+    .advantage-process-section{
+        padding: 0 5% 0 5%;
+    }
+
+    .menu-sneak-inner {
+        padding-top: 100px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-inner{
+        justify-content: space-between;
+        padding: 0 20px 0px 20px;
+    }
+    .nav-links{
+        display: none;
+    } 
+    .nav-hamburger{
+        visibility: visible;
+    }
+    .sticky{
+        display: block;
+        width: 100%;
+        z-index: 10;
+    } 
+
+    
+    .hero-section {
+        padding: 0 10px;
+    }
+    .choose-section {
+        padding: 0 10px;
+    }
+    .mission-section {
+        margin-top: -57.5%;
+        padding: 0 10px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+    .main-font{
+        color: var(--yellow-font-color);
+        font-size: var(--main-font-size-1024px);
+        font-family: var(--bayon-font-family);
+        line-height:60px ;
+    }
+    .para-db-font{
+        color: var(--dark-brown-font-color);
+        font-size: var(--para-font-size-1024px);
+        font-family: var(--outfit-font-family);
+        line-height: 26px;
+    }
+    .para-b-font{
+        color: var(--brown-font-color);
+        font-size: var(--para-font-size-1024px);
+        font-family: var(--outfit-font-family);
+        line-height: 26px;
+    }
+
+    .wrapper{
+        padding: 0 10px 0 10px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-part-1{
+        flex-basis: 100%;
+    }
+    .flex-part-2{
+        flex-basis: 100%;
+    }
+    
+    .hero-section {
+        padding: 0 10px;
+        height: 1000px;
+    }
+    .choose-section {
+        padding: 0 10px;
+    }
+
+    .hero-section-text h1{
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .choose-text h1 {
+        font-size: var(--main-font-size-1024px);
+        line-height: 60px;
+    }
+    .choose-text p{
+        font-size: var(--para-font-size-1024px);
+    }
+
+    .mission-section{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: -76%;
+    }
+    .grid-section-part-1{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .grid-section-part-2{
+        flex-basis: 100%;
+        align-self: center;
+    }
+    .grid-section-part-2 img{
+        width: 100%;
+    }
+
+.meal-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 150px 80px 0 80px;
+    gap: 30px;
+
+}
+.meal-cart{
+    height: 420px;
+}
+
+.meal-cart h1{
+    font-size: var(--main-font-size-1024px);
+    line-height: 60px;
+    width: 20%;
+}
+.meal-cart p{
+    width: 100%;
+    margin: 20px auto;
+    font-size: var(--para-font-size-1024px);
+}
+
+.news-section{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news-section-text{
+    text-align: center;
+}
+.news-section-text h1{
+    font-size: var(--main-font-size-1024px);
+    width: 100%;
+    line-height: 100px; 
+}
+.news-section-text p{
+    margin: 20px auto;
+    font-size: var(--para-font-size-1024px);
+    width: 100%;
+}
+.news-section button{
+    align-self: unset;
+}
+
+
+
+/* Footer Start */
+
+.footer-main{
+    padding: 80px 0px 80px 0px;
+    justify-content: center;
+}
+.footer-main h1{
+    color: white;
+    font-family: var(--outfit-font-family);
+    font-size: var(--para-font-size-1200px);
+    text-transform: uppercase;
+}
+
+.footer-social-icons {
+
+    margin-top: 0%;
+}
+
+.footer-main a{
+    text-decoration: none;
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: 20px;
+}
+.footer-main p{
+    font-family: var(--outfit-font-family);
+    color: var(--dark-brown-font-color);
+    font-size: 20px;
+}
+
+.footer-part-4-inner p{
+    margin: 10px 0;
+    width: 80%;
+}
+
+
+.footer-part-1{
+    flex-basis: 40%;
+    align-self: center;
+}
+.footer-part-2{
+    flex-basis: 40%;
+}
+
+
+.footer-part-3{
+   flex-basis: 40%;
+}
+.footer-part-4{
+    flex-basis: 40%;
+}
+
+
+
+
+.content-section{
+    text-align: center;
+}
+.hero-section-business{
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+.content-section h1{
+   line-height: 100px ;
+   color: var(--brown-font-color);
+}
+.content-section p{
+    width: 100%;
+    margin: 2% 0;
+}
+
+.wrapper{
+    margin: 0 3% 0 3%;
+}
+.hero-section-business{
+    margin: 8% auto;
+    width: 80%;
+}
+
+.hero-section-business h1{
+    font-size: 130px;
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-weight: lighter;
+    line-height: 120px;
+}
+.hero-section-business span{
+    font-size: 110px;
+    color: var(--yellow-font-color);
+    font-family: var(--bayon-font-family);
+    font-weight: lighter;
+    line-height: 100px;
+}
+
+
+/* --------------------------------------------------------------Company--------------------------------------------------------- */
+.hero-section-company{
+    height: 600px;
+}
+
+.hero-company-text ul{
+    font-size: 35px;
+}
+
+.hero-section-company h1{
+    font-size: 160px;
+    line-height: 140px;
+}
+
+.company-mid-section{
+    flex-direction: column;
+    margin-top: 100px;
+}
+.company-mid-section-1{
+    flex-basis: 100%;
+    padding: 3% 3% 3% 3%;
+}
+.company-mid-section-1 h1{
+    width: auto;
+    line-height: 55px;
+}
+
+.company-mid-section-1 p{
+    margin: 3% 0;
+}
+
+.company-mid-section-2{
+    flex-basis: 100%;
+}
+.company-mid-section-2 img{
+    width: 50%;
+    margin: 0 0% 0 25%;
+}
+
+.company-approach-section{
+    height: 600px;
+    margin-top: 100px;
+}
+
+.company-approach-text{
+    padding: 0 3% 0 3%;
+    margin-top: -48%;
+    width: auto;
+    text-align: center;
+}
+.company-approach-text h1{
+    margin: 5% auto;
+}
+
+.advantage-process-section{
+flex-direction: column;
+margin-top: 270px;
+padding: 10% 3% 0 3%;
+
+}
+.advantage-process-part-1{
+    flex-basis: 100%;
+    text-align: center;
+}
+.advantage-process-part-2{
+    flex-basis: 100%;
+}
+
+.advantage-process-part-1 h2{
+    font-size: 45px;
+    line-height: 45px;
+}
+.advantage-process-part-1 p{
+    margin: 30px auto;
+}
+
+/* ------------------------------------------------------Brand------------------------------------------------------------ */
+.hero-brand-text h1 {
+    font-size: 135px;
+    line-height: 110px;
+    text-align: center;
+}
+
+.investor-hero-title{
+    font-size: 135px;
+    line-height: 110px;
+}
+
+.chef-meal-section{
+    margin-top: 100px;
+}
+.chef-meal-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chef-meal-part-1{
+    flex-basis: 100%;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+}
+.chef-meal-part-2{
+    flex-basis: 100%;
+}
+.chef-meal-part-1 h1{
+    text-align: left;
+}
+.chef-meal-part-1 ul{
+    font-size: 45px;
+    margin: 15px auto;
+    text-align: left;
+}
+.chef-meal-part-1 button{
+    margin: 40px auto;
+}
+
+.key-advantage-section{
+    flex-direction: column;
+    margin-top: 100px;
+}
+.key-advantage-part-1{
+    flex-basis:100%;
+    padding: 0 0 0 3%;
+}
+.key-advantage-part-2{
+    flex-basis: 100%;
+}
+
+.save-time-section{
+    height: 800px;
+    padding-top: 60px;
+}
+.save-time-inner{
+    flex-direction: column;
+    align-items: center;
+
+}
+.save-time-part-1{
+    flex-basis: 100%;
+}
+.save-time-part-1 p{
+    margin: 50px auto;
+}
+.save-time-part-2{
+    flex-basis: 100%;
+}
+.save-time-part-2 img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0px;
+}
+.menu-sneak-peak{
+    height: 800px;
+}
+.menu-sneak-inner{
+padding-top: 100px;
+}
+
+
+
+.how-it-works{
+    height: 700px;
+  }
+  .how-it-works-inner{
+    padding-top: 50px;
+    align-items: start;
+  }
+  .how-it-works-inner-part-1 li{
+    margin: 25px auto;
+    width: 100%;
+  }
+
+  .how-it-works-inner-part-1 p{
+    margin: 40px auto;
+    width: 100%;
+  }
+
+
+
+
+
+  .plan-price-inner{
+    padding-top: 100px;
+  }
+
+  .plan-price {
+    height: 1700px;
+}
+  .plan-price-carts{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .price-carts{
+    width: 90%;
+    padding: 20px 20px 20px 20px;
+    gap: 10px;
+  }
+
+  .price-carts h1{
+    font-size: 55px;
+  }
+  .price-carts h3{
+    font-size: 40px;
+  }
+  .price-carts h4{
+    font-weight: 900;
+    font-size: 25px;
+  }
+  .price-carts p{
+    width: 90%;
+  }
+
+  .delicious {
+    height: 950px;
+}
+
+.stock-info {
+    height: 600px;
+}
+
+
+
+
+}
+
+@media screen and (max-width:768px){
+    .main-font{
+        color: var(--yellow-font-color);
+        font-size: var(--main-font-size-768px);
+        font-family: var(--bayon-font-family);
+        line-height: 40px;
+    }
+    .para-db-font{
+        color: var(--dark-brown-font-color);
+        font-size: var(--para-font-size-768px);
+        font-family: var(--outfit-font-family);
+        line-height: 26px;
+    }
+    .para-b-font{
+        color: var(--brown-font-color);
+        font-size: var(--para-font-size-768px);
+        font-family: var(--outfit-font-family);
+        line-height: 16px;
+    }
+
+    .hero-section-text {
+        text-align: center;
+        padding: 0 30px 0 30px;
+    }
+
+    .hero-section-text p {
+        width: 100%;
+        font-size: var(--para-font-size-1200px);
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .meal-section {
+        gap: 70px;
+    }
+    
+    .no-section{
+        flex-direction: column;
+    }
+    .mission-section {
+        margin-top: -100%;
+    }
+
+
+    
+
+.content-section h1{
+   line-height: 80px ;
+}
+.content-section p{
+    width: 100%;
+    margin: 2% 0;
+}
+
+.hero-section-business{
+    margin: 6% auto;
+    width: 80%;
+}
+
+.hero-section-business h1{
+    font-size: 100px;
+    line-height: 80px;
+}
+.hero-section-business span{
+    font-size: 90px;
+    line-height: 80px;
+}
+
+.company-approach-section{
+    height: 500px;
+    width:100%;
+}
+
+.company-approach-text{
+
+    margin-top: -55%;
+    text-align: center;
+
+}
+.company-approach-text h1{
+    margin: 5% auto;
+}
+
+
+/* --------------------------------------------------------------Company--------------------------------------------------------- */
+
+
+
+.company-approach-section{
+    height: 500px;
+    margin-top: 100px;
+}
+
+.company-approach-text{
+    margin-top: -51%;
+}
+.company-approach-text h1{
+    margin: 5% auto;
+}
+
+.advantage-process-section{
+margin-top: 250px;
+}
+
+.advantage-process-part-1 h2{
+    font-size: 40px;
+    line-height: 40px;
+}
+.advantage-process-part-1 p{
+    margin: 28px auto;
+}
+
+/* -----------------------------------------------------Brand---------------------------------------------------------------------- */
+.hero-brand-text h1 {
+    font-size: 120px;
+    line-height: 100px;
+}
+.hero-brand-text ul {
+    font-size: 35px;
+}
+
+.chef-meal-part-1 h1 {
+    line-height: 60px;
+}
+
+
+
+
+
+
+}
+
+@media  screen and (max-width: 425px) {
+
+    .main-font{
+        color: var(--yellow-font-color);
+        font-size: var(--main-font-size-425px);
+        font-family: var(--bayon-font-family);
+        font-weight: lighter;
+        line-height: 40px;
+    }
+    
+    .para-db-font{
+        color: var(--dark-brown-font-color);
+        font-size: var(--para-font-size-425px);
+        font-family: var(--outfit-font-family);
+        line-height: 18px;
+    }
+    .para-b-font{
+        color: var(--brown-font-color);
+        font-size: var(--para-font-size-425px);
+        font-family: var(--outfit-font-family);
+        line-height: 18px;
+    }
+    .hero-title {
+        font-size: 140px;
+        line-height: 50px;
+    }
+    .mission-section {
+        margin-top: -210%;
+    }
+
+
+.hero-section-text {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+.hero-section-text p {
+    font-size: var(--para-font-size-1024px);
+}
+
+.choose-text p {
+    font-size: var(--para-font-size-768px);
+}
+.meal-cart p {
+
+    font-size: var(--para-font-size-768px);
+}
+.news-section-text p {
+    font-size: var(--para-font-size-768px);
+}
+.news-carts p {
+    font-size: 18px;
+    text-align: center;
+}
+.news-carts h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.choose-text {
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
+.grid-section-part-1 {
+    padding: 18% 10px 35% 10px;
+    flex-basis: 100%;
+    text-align: center;
+}
+.grid-section-part-1 p {
+    margin-top: 0px;
+}
+
+
+.meal-section {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 150px 10px 0 10px;
+    gap: 35px;
+}
+.meal-cart {
+    height: 400px;
+}
+.meal-cart h1 {
+
+    width: 60%;
+}
+.news-section-text h1 {
+    line-height: 60px;
+}
+
+.news-letters-carts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 150px 20px 0px 20px  ;
+    gap: 40px;
+}
+
+.footer-main{
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+}
+
+.footer-main h1{
+    color: white;
+    font-size: var(--para-font-size-1024px);
+    text-transform: uppercase;
+}
+
+
+.footer-main a{
+    font-size: 16px;
+}
+.footer-main p{
+    font-size: 16px;
+}
+
+.footer-part-4-inner p{
+    width: 80%;
+}
+
+
+
+.footer-logo img{
+    width: 80%;
+}
+
+
+
+
+.content-section h1{
+    line-height: 40px ;
+    margin: 20px auto;
+ }
+ .content-section p{
+     width: 100%;
+     margin: 2% 0;
+ }
+ 
+ 
+ .hero-section-business{
+     margin: 6% auto;
+     width: 100%;
+ }
+ 
+ .hero-section-business h1{
+     font-size: 70px;
+     line-height: 60px;
+ }
+ .hero-section-business span{
+     font-size: 60px;
+     line-height: 40px;
+ }
+ 
+
+ 
+/* --------------------------------------------------------------Company--------------------------------------------------------- */
+.hero-section-company{
+    height: 80vh;
+}
+
+.hero-company-text ul{
+    font-size: 25px;
+}
+
+.hero-section-company h1{
+    font-size: 100px;
+    line-height: 80px;
+}
+
+.company-mid-section{
+    margin-top: 60px;
+}
+
+.company-mid-section-2 img{
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.company-approach-text{
+    margin-top: -88%;
+}
+.company-approach-text h1{
+    margin: 5% auto;
+}
+.company-mid-section-1 h1 {
+    line-height: 50px;
+}
+
+.advantage-process-section{
+margin-top: 200px;
+}
+
+.advantage-process-part-1 h2{
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.chef-meal-slider-outer{
+    width: 80%;
+    position: relative;
+    top: 10px;
+    left: 45px;
+}
+
+
+/* Brands Slider */
+.chef-meal-inner-slider .slider {
+    width: 450px;
+    margin: -235px auto auto auto;
+    text-align: center;
+    padding: 0px;
+}
+
+
+
+.chef-meal-arrow{
+    margin: -15px auto auto 52px;
+    width: 30%;
+}
+.chef-meal-part-2 button{
+    margin:-135px auto auto 190px;
+    float: left;
+}
+
+.chef-meal-part-2 h3{
+    position: relative;
+    width: 200px;
+    top: -150px;
+    left: 190px;
+    font-size: 30px;
+}
+
+.chef-meal-part-1 ul{
+    font-size: 30px;
+}
+
+.footer-last-portion{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 3% 20px 3%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+}
+
+@media screen and (max-width:375px){
+
+    .hero-title {
+        font-size: 110px;
+        line-height: 50px;
+    }
+    .hero-section-text h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .mission-section {
+        margin-top: -235%;
+    }
+    .grid-section-part-1 button {
+        margin-top: 30px;
+    }
+
+    .meal-cart h1 {
+        width: 80%;
+    }
+    .meal-cart {
+        height: 460px;
+    }
+ 
+ .hero-section-business h1{
+     font-size: 60px;
+     line-height: 50px;
+ }
+ .hero-section-business span{
+     font-size: 55px;
+     line-height: 30px;
+ }
+
+ .footer-last-portion{
+    padding: 20px 2% 20px 2%;
+    gap: 20px;
+}
+
+.footer-last-portion-part-1 p{
+    font-size: 15px;
+}
+.footer-last-portion-part-2 a{
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+}
+
+
+ 
+/* --------------------------------------------------------------Company--------------------------------------------------------- */
+.hero-section-company{
+    height: 80vh;
+}
+
+.hero-company-text ul{
+    font-size: 22px;
+}
+
+.hero-section-company h1{
+    font-size: 80px;
+    line-height: 60px;
+}
+
+.company-approach-section{
+    height: 500px;
+}
+
+.company-approach-text{
+    margin-top: -98%;
+}
+
+.advantage-process-section{
+margin-top: 150px;
+}
+
+.advantage-process-part-1 h2{
+    font-size: 30px;
+    line-height: 30px;
+}
+.advantage-process-part-1 p{
+    margin: 25px auto;
+}
+
+.chef-meal-slider-outer{
+    width: 76%;
+    position: relative;
+    top: 10px;
+    left: 48px;
+}
+
+
+/* Brands Slider */
+.chef-meal-inner-slider .slider {
+    width: 420px;
+    margin: -208px auto auto auto;
+}
+.slide{
+    width: 280px;
+}
+
+
+
+.chef-meal-arrow{
+    margin: -20px auto auto 60px;
+    width: 20%;
+}
+.chef-meal-part-2 button{
+    margin: -115px auto auto 148px;
+    float: left;
+}
+
+.chef-meal-part-2 h3{
+    position: relative;
+    width: 180px;
+    top: -115px;
+    left: 172px;
+    font-size: 22px;
+}
+
+
+}
+
+@media screen and (max-width: 320px){
+
+    .hero-section-business h1{
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .hero-section-business span{
+        font-size: 48px;
+        line-height: 40px;
+    }
+
+    .mission-section {
+        margin-top: -275%;
+    }
+    .grid-section-part-1 button {
+        margin-top: 10px;
+    }
+
+     
+/* --------------------------------------------------------------Company--------------------------------------------------------- */
+
+.hero-company-text ul{
+    font-size: 18px;
+}
+
+.company-approach-text{
+    margin-top: -112%;
+}
+
+/* ------------------------------------------------------Brand-------------------------------------------------------------- */
+.hero-brand-text h1 {
+    font-size: 105px;
+    line-height: 30px;
+}
+
+.chef-meal-inner-slider .slider {
+    width: 350px;
+    margin: -168px auto auto auto;
+}
+.chef-meal-part-2 button {
+    margin: -95px auto auto 138px;
+    float: left;
+}
+
+.chef-meal-part-2 h3 {
+    top: -96px;
+    left: 158px;
+}
+
+
+
+}

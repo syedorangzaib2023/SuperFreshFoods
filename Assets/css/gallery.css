@@ -1,0 +1,15 @@
+#hero-gallery-bg{
+    background-image: url(../images/gallery/Group-35.png);
+}
+
+.gallery-portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 20px;
+    margin: 10% 3%;
+}
+
+.gallery-pic img{
+    width: 100%;
+    border-radius: 20px;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/fresh.css">
+    <link rel="stylesheet" href="./Assets/css/team.css">
+    <link rel="stylesheet" href="./Assets/css/press.css">
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon Link -->
+    <link rel="shortcut icon" href="./Assets/images/favicon.ico" type="image/x-icon">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Slick Slider 2 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+    <title>Super Fresh Foods</title>
+</head>
+<body onscroll="scrolldown()">
+    <header>
+        <!-- Nav Start -->
+        <nav id="nav-inner">
+
+            <div class="nav-inner" >
+
+                <div class="nav-logo">
+                    <img src="./Assets/images/logo.png" alt="">
+                </div>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./business.html">Business Developement</a></li>
+
+                        <li> 
+                            <a href="./company.html">Company <i class="fa-solid fa-angle-down angle-down"></i></a>
+                                <div class="inside_items">
+                                    <ul>
+                                        <a href="./brand.html"><li>BRANDS</li></a> 
+                                        <a href="./team.html"><li>OUR TEAM</li></a>	
+                                        <a href="./gallery.html"><li class="last-nav-list-item">GALLERY</li></a>		
+                                    </ul>
+                                </div>
+                        </li>
+
+                        <li>
+                            <a href="./investor.html">Investor Relations <i class="fa-solid fa-angle-down angle-down"></i></a>
+                            <div class="inside_items-2">
+                                <ul>
+                                    <a href="./press.html"><li>PRESS RELEASES</li></a> 	
+                                </ul>
+                            </div>
+                        
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="nav-hamburger">
+                    <i class="fa-solid fa-bars" onclick="openMenu()" ></i>
+                </div>
+
+            </div>
+
+            <div class="mobile-nav-links" id="mobile-nav-links">
+                <ul >
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./business.html">Business Developement</a></li>
+                    <li><a href="./company.html">Company</a></li>
+                    <li><a href="./investor.html">Investor Relations</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./brand.html">Brands</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./press.html">Press Releases</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Nav End -->
+
+        <!-- Press Hero Section -->
+
+
+        <div class="hero-brand" id="hero-press-bg">
+
+            <div class="hero-brand-text wrapper">
+                <h1>PRESS <br>
+                    RELEASES</h1>
+            </div>
+        </div>
+
+        <!-- Press Carts -->
+
+        <div class="press-carts wrapper">
+
+            <div class="press-carts-inner">
+                <!-- 1 -->
+                <div class="press-cart">
+                    <p class="press-date">26 September 2023</p>
+                    <h1>Super Fresh Foods Announces Move to Compostable Packaging.</h1>
+
+                    <div class="press-cart-text">
+                    <p >Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”), a popular meal prep and delivery company, is proud to announce its commitment to environmental sustainability by transitioning to the use of compostable containers for all its meal deliveries…</p>
+                    <p >In response to the growing global concern for environmental conservation, Super Fresh Foods has taken a significant step towards reducing its carbon footprint and promoting a healthier planet. By replacing traditional plastic and non-recyclable containers with compostable alternatives, the company aims to play a crucial role in minimizing the environmental impact of food delivery services. </p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+                
+                <!-- 2 -->
+                <div class="press-cart">
+                    <p class="press-date">25 September 2023</p>
+                    <h1>Super Fresh Foods Announces New Menu for Toronto Delivery Service</h1>
+
+                    <div class="press-cart-text">
+                    <p >Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”), a popular meal prep and delivery company, is thrilled to announce is pleased to announce exciting new menu items for their upcoming Toronto launch.</p>
+                    <p >In response to the ever-evolving tastes and preferences of our valued customers, Super Fresh Foods is thrilled to introduce an array of mouthwatering culinary creations to the Toronto area that will tantalize our customers taste buds. Our team of talented chefs has been hard at work crafting new, diverse, and flavorful dishes to cater to a wide range of palates.</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                <!-- 3 -->
+                <div class="press-cart">
+                    <p class="press-date">26 September 2023</p>
+                    <h1>Super Fresh Foods Announces Innovative Meal Delivery App</h1>
+
+                    <div class="press-cart-text">
+                    <p class="para-bold-db" >Our Commitment to Quality and Tasty Dining Remains at the Core of This Innovation – Benny Doro</p>
+                    <p >LAS VEGAS, NV, Sept. 14, 2023 (GLOBE NEWSWIRE) — via NewMediaWire – Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”), a popular meal prep and delivery company, is thrilled to announce an exciting new mobile application designed to revolutionize the way people enjoy their meals. This innovative app will provide a seamless and convenient meal delivery experience, ensuring that customers can savor the freshness and quality of our products from the comfort of their own homes or at work. </p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                <!-- 4 -->
+                <div class="press-cart">
+                    <p class="press-date">12 December  2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Announces New Innovative Solutions To Its Platform</h1>
+
+                    <div class="press-cart-text">
+                    <p >Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”), a popular meal prep and delivery company, is revolutionizing the way people approach healthy eating. With their dedication to quality, variety, and convenience, Super Fresh Foods is transforming the lives of busy individuals and families.</p>
+                    <p >Their mission is simple: to make restaurant-style eating accessible and effortless for everyone. Here are some of the innovative solutions Super Fresh Foods is bringing to the table:</p>
+                    <p>1.  Extensive Menu Selection: Super Fresh Foods offers an extensive menu of chef-curated meals, catering to various dietary preferences and restrictions. With options ranging from vegan and gluten-free to low-carb and high-protein, customers can easily find meals that align with their specific needs.</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                <!-- 5 -->
+                <div class="press-cart">
+                    <p class="press-date">26 September 2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Inc. Expansion Set for Additional Areas in GTA</h1>
+
+                    <div class="press-cart-text">
+                    <p >LAS VEGAS, NV, Aug. 22, 2023 (GLOBE NEWSWIRE) — via NewMediaWire – Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”), a popular meal prep and delivery company, is pleased to announce that its licensed kitchen facility in the GTA is scalable and ready to expand as orders increase.</p>
+                    <p >​CEO Benny Doro was in Toronto last week reviewing the facilities and introducing standard operating procedures (SOP) that  have been tried and proven in the Vancouver facility over the past five years.
+                        The Company is also looking at joint venture and acquisitions of smaller direct-to-consumer food production and delivery services, thereby reducing delivery times and costs in new areas of potential expansion. </p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                    <!-- 6 -->
+                <div class="press-cart">
+                    <p class="press-date">26 September 2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Inc. Launches Into the Greater Toronto Area With Meals Starting as low as $9 per Serving</h1>
+
+                    <div class="press-cart-text">
+                    <p >LAS VEGAS, NV, July 19, 2023 (GLOBE NEWSWIRE) — via NewMediaWire – Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”), a popular BC based meal prep company, is pleased to announce the launch of its new meal delivery service in the Greater Toronto Area (GTA), and with its focus on the convenience of a restaurant experience at home.</p>
+                    <p >​This new service is expected to be a game-changer for individuals in the GTA, who are looking for a convenient and affordable way to get high quality meals that the entire family can enjoy. With Super Fresh Foods’ meal prep and delivery service, customers will be able to enjoy fresh and delicious meals, without having to worry about cooking or meal planning.</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                     <!-- 7 -->
+                <div class="press-cart">
+                    <p class="press-date">26 September 2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Inc. Announces Launch Date of Expansion of Sales Into the Greater Toronto Area</h1>
+
+                    <div class="press-cart-text">
+                    <p class="para-bold-db" >New Launch is a Company Game-Changer as Super Fresh Foods Expands and Builds Its Revenue Base – Benny Doro, CEO
+                    </p>
+                    <p >LAS VEGAS, NV, June 15, 2023 (GLOBE NEWSWIRE) — via NewMediaWire – Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”) is pleased to announce it will launch its first expansion outside of British Columbia into the GTA (Greater Toronto Area) with a targeted date during the first week of July.</p>
+                    <p>​The Company is excited to launch its new meal prep and delivery service in the GTA, providing convenient options for busy individuals, families and corporate clients looking to maintain a healthy diet while not sacrificing taste. The service also offers customizable meal plans tailored to individual dietary needs and preferences, such as vegetarian, gluten-free, and low carb options.</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                    <!-- 8 -->
+                <div class="press-cart">
+                    <p class="press-date">26 September 2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Inc. Announces Expansion Into the Greater Toronto Area and First Shareholder Conference Call</h1>
+
+                    <div class="press-cart-text">
+                    <p >LAS VEGAS, NV, June 08, 2023 (GLOBE NEWSWIRE) — via NewMediaWire — Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”) is pleased to announce it has formalized its first expansion into the GTA (Greater Toronto Area) and will be launching a regionally focused meal subscription site to be announced.</p>
+                    <p >​The framework has been completed for the new website and testing has been completed. The following regions are to be launched first: Maple, Richmond Hill, Thornhill, Vaughan, Aurora, King City, New Market. These areas have a combined population of over 1.2 million residents providing an excellent potential customer base.</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                    <!-- 9 -->
+                <div class="press-cart">
+                    <p class="press-date">1st June  2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Inc. Announces Sale of its Subsidiary Enigmai Ltd.</h1>
+
+                    <div class="press-cart-text">
+                    <p >Company to focus on core competencies in its subscription-based food production and delivery services</p>
+                    <p >Las Vegas NV: -Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the Company) is pleased to announce that it on May 30, 2023, Enigmai Ltd. was sold to several of its outside shareholders and is therefore no longer held by the company. The Company filed a Material Change of Events with the OTC Markets.</p>
+                    <p>​The Company is now fully focussed on its new business model, in an industry that is growing quickly and has room to expand. Super Fresh Foods is increasing its marketing efforts in southern BC and is looking to expand into other areas including the Great Toronto area as well as secondary medium-sized regions.</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+                <!-- 10 -->
+                <div class="press-cart">
+                    <p class="press-date">1st June  2023</p>
+                    <h1>Golden Star Enterprises DBA Super Fresh Foods Inc. Announces Production Contract with Eat Real Meals</h1>
+
+                    <div class="press-cart-text">
+                    <p class="para-bold-db"  >One of the main benefits of subscribing to a meal production and delivery company is the convenience. – Benny Doro, CEO</p>
+                    <p >LAS VEGAS, NV, May 24, 2023 (GLOBE NEWSWIRE) — via NewMediaWire – Golden Star Enterprises Ltd. (OTCMARKETS: GSPT) DBA Super Fresh Foods (the “Company”) is pleased to announce that is has signed Eat Real Meals Inc. (the “Client”) to a production contract whereby the Company will exclusively manage all meal production for the Client. </p>
+                    <p>​Eat Real Meals delivers deliciously fully prepared frozen entrees such as Lasagnas, Chicken Pot Pies and other savory dishes made from local and organic ingredients to you and your family.  Perfect for when you are pressed for time and want a homecooked meal, just remove from the freezer, heat, and enjoy!</p>
+                    </div>
+                    <button class="web-button-white">READ MORE</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <!-- Footer Start -->
+        <div class="footer-main">
+            <!-- 1 -->
+            <div class="footer-part-1">
+                <div class="footer-logo">
+                    <img src="./Assets/images/logo.png" alt="" srcset="">
+                </div>
+                
+                <div class="footer-social-icons">
+                    <a href=""><img src="./Assets/images/Insta.png" alt=""></a>
+                    <a href=""><img src="./Assets/images/FB.png" alt=""></a>
+                    <a href=""><img src="./Assets/images/LKdin.png" alt=""></a>
+                    <a href=""><img src="./Assets/images/TikTok.png" alt=""></a>
+                    <a href=""><img src="./Assets/images/Twitter.png" alt=""></a>
+                    <a href=""><img src="./Assets/images/YTube.png" alt=""></a>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="footer-part-2">
+                <h1>Brands</h1>
+                <ul class="footer-links">
+                    <li><a href="">All your Meal</a></li>
+                </ul>
+            </div>
+            <!-- 3 -->
+            <div class="footer-part-3">
+                <div class="footer-part-3-inner">
+                <h1>Super Fresh Foods Inc.</h1>
+                <ul class="footer-links">
+                    <li><a href="./company.html">Company</a></li>
+                    <li><a href="">Approach</a></li>
+                    <li><a href="">Advantage</a></li>
+                    <li><a href="">Job Board</a></li>
+                    <li><a href="">Executive</a></li>
+                    <li><a href="./business.html">Business Developement</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Press Releases</a></li>
+                    <li><a href="">Fillings</a></li>
+                </ul>
+            </div>
+            </div>
+            <!-- 4 -->
+            <div class="footer-part-4">
+                <h1>Contact</h1>
+                <div class="footer-part-4-inner">
+                    <p>Super Fresh Foods USA Inc
+                        10120 W Flamingo Ave,
+                        suite 4-1103 Las Vegas, NV 89147
+                        USA</p>
+                    <img src="./Assets/images/USA Flag.png" alt="">
+                    <p>hello@superfreshfoods.ca</p>
+                    <p>Phone: (888) 711-0552</p>
+                </div>
+            </div>
+    
+    </div>
+
+    
+    <div class="footer-last-portion">
+        <div class="footer-last-portion-part-1">
+            <p>© 2024 superfreshfoods. All Rights Reserved</p>
+        </div>
+        <div class="footer-last-portion-part-2">
+            <div class="footer-last-text">
+                <a href="">Terms & Condition</a>
+                <a href=""> Privacy Policy</a>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <script src="./Assets/js/fresh.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+:root{
+    --yellow-font-color:  rgba(226, 204, 0, 1);
+    --brown-font-color: rgba(200, 176, 94, 1);
+    --dark-brown-font-color: rgba(121, 113, 86, 1);
+    --bayon-font-family: "Bayon";
+    --outfit-font-family: "Outfit";
+    --main-font-size-1200px: 100px;
+    --para-font-size-1200px: 26px;
+    --main-font-size-1024px: 70px;
+    --para-font-size-1024px: 26px;
+    --main-font-size-768px: 60px;
+    --para-font-size-768px: 22px;
+    --main-font-size-425px: 50px;
+    --para-font-size-425px: 20px;
+}
+
+#hero-press-bg{
+    background-image: url(../images/press/Group-54.png);
+}
+.press-carts-inner{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 80px;
+    margin-top: 10%;
+}
+
+.press-cart{
+    border: 3px solid rgba(224, 224, 224, 1);
+    padding: 40px;
+    border-radius: 20px;
+    border-left: 50px solid var(--yellow-font-color);
+    box-shadow: 0px 48px 60px -27px rgba(136, 136, 136, 0.35);
+}
+.press-date{
+    color: var(--brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: 24px;
+}
+
+
+
+.press-cart-text p{
+    font-family:var(--outfit-font-family);
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--dark-brown-font-color);
+    margin: 3% auto;
+}
+
+.para-bold-db{
+    font-family:var(--outfit-font-family);
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--dark-brown-font-color);
+    font-weight: 700;
+}
+
+.press-cart h1{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-size: 42px;
+    font-weight: 800;
+}
+.press-cart button{
+    box-shadow: 0px 48px 60px -27px rgba(136, 136, 136, 0.35);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .press-date{
+        font-size: 24px;
+        text-align: left;
+    }
+    .press-cart-text p{
+       text-align: left;
+       font-size: 20px;
+       line-height: 20px;
+
+    }
+
+    .press-cart h1{
+        font-size: 32px;
+        text-align: left;
+        font-size: 500;
+    }
+
+    .press-cart {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .press-date{
+        font-size: 20px;
+    }
+
+    .press-cart h1{
+        font-size: 30px;
+    }
+    .press-cart{
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .press-date{
+        font-size: 18px;
+    }
+
+    .press-cart h1{
+        font-size: 28px;
+    }
+    .press-cart{
+        border-left: 1px solid var(--dark-brown-font-color);
+        padding: 1.5%;
+        border-radius: 10px;
+        border: 1px solid;
+    }
+    .hero-brand-text h1{
+        font-size: 58px;
+        line-height: 60px;
+    }
+}
+
+
+

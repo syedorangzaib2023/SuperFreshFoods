@@ -1,0 +1,91 @@
+:root{
+    --yellow-font-color:  rgba(226, 204, 0, 1);
+    --brown-font-color: rgba(200, 176, 94, 1);
+    --dark-brown-font-color: rgba(121, 113, 86, 1);
+    --bayon-font-family: "Bayon";
+    --outfit-font-family: "Outfit";
+    --main-font-size-1200px: 100px;
+    --para-font-size-1200px: 26px;
+    --main-font-size-1024px: 70px;
+    --para-font-size-1024px: 26px;
+    --main-font-size-768px: 60px;
+    --para-font-size-768px: 22px;
+    --main-font-size-425px: 50px;
+    --para-font-size-425px: 20px;
+}
+
+#hero-jobs-bg{
+    background-image: url(../images/jobs/Group-53.png);
+}
+
+.job-position-section{
+    margin-top: 10%;
+}
+
+.job-inner-section{
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 100px;
+}
+
+.job-inner-section h2{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.job-inner-section h3{
+    color: var(--brown-font-color);
+    font-family: var(--outfit-font-family);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.job-inner-section h4{
+    color: var(--dark-brown-font-color);
+    font-family: var(--outfit-font-family);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.job-inner-section p{
+    margin: 3% auto;
+}
+
+@media screen and (max-width: 768px){
+  
+    
+.job-inner-section h2{
+    font-size: 50px;
+}
+
+.job-inner-section h3{
+    font-size: 45px;
+}
+
+.job-inner-section h4{
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 425px){
+  
+    
+    .job-inner-section h2{
+        font-size: 40px;
+    }
+    
+    .job-inner-section h3{
+        font-size: 35px;
+    }
+    
+    .job-inner-section h4{
+        font-size: 20px;
+    }
+    .job-inner-section button{
+        margin: 5% auto;
+    }
+    }

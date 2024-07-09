@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/fresh.css">
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon Link -->
+    <link rel="shortcut icon" href="./Assets/images/favicon.ico" type="image/x-icon">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Slick Slider 2 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+    <title>Super Fresh Foods</title>
+</head>
+<body onscroll="scrolldown()">
+    <header>
+        <!-- Nav Start -->
+        <nav id="nav-inner">
+
+            <div class="nav-inner" >
+
+                <div class="nav-logo">
+                    <img src="./Assets/images/logo.png" alt="">
+                </div>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./business.html">Business Developement</a></li>
+
+                        <li> 
+                            <a href="./company.html">Company <i class="fa-solid fa-angle-down angle-down"></i></a>
+                                <div class="inside_items">
+                                    <ul>
+                                        <a href="./brand.html"><li>BRANDS</li></a> 
+                                        <a href="./team.html"><li>OUR TEAM</li></a>	
+                                        <a href="./gallery.html"><li class="last-nav-list-item">GALLERY</li></a>		
+                                    </ul>
+                                </div>
+                        </li>
+
+                        <li>
+                            <a href="./investor.html">Investor Relations <i class="fa-solid fa-angle-down angle-down"></i></a>
+                            <div class="inside_items-2">
+                                <ul>
+                                    <a href="./press.html"><li>PRESS RELEASES</li></a> 	
+                                </ul>
+                            </div>
+                        
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="nav-hamburger">
+                    <i class="fa-solid fa-bars" onclick="openMenu()" ></i>
+                </div>
+
+            </div>
+
+            <div class="mobile-nav-links" id="mobile-nav-links">
+                <ul >
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./business.html">Business Developement</a></li>
+                    <li><a href="./company.html">Company</a></li>
+                    <li><a href="./investor.html">Investor Relations</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./brand.html">Brands</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./press.html">Press Releases</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Nav End -->
+
+        <!-- Brand Hero Section -->
+
+
+        <div class="hero-brand">
+            <div class="hero-brand-text wrapper">
+                <h1>BRANDS</h1>
+                <h2>
+                    <ul><li>All Your Meal</li></ul>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Chef Meal Section -->
+        <div class="chef-meal-section">
+
+            <div class="chef-meal-inner wrapper">
+
+                <div class="chef-meal-part-1">
+                    <h1 class="main-font">chef prepared meals delivered</h1>
+                    <ul>
+                        <li>Healthy Meals</li>
+                        <li>Ready in Minutes</li>
+                        <li>Heat and Eat!</li>
+                    </ul>
+                    <button class="web-button">GET STARTED</button>
+                </div>
+
+
+                <div class="chef-meal-part-2">
+
+                    <img class="chef-meal-slider-outer"  src="./Assets/images/brand/slider-bg.png" alt="">
+                    <div class="chef-meal-inner-slider">
+
+
+                    <div class="slider">
+                        <!-- 1 -->
+                        <div class="slide">
+                          <img src="./Assets/images/brand/Meal-Picture.1.png" alt="" class="img-responsive" />
+                        </div>
+                        <!-- 2 -->
+                        <div class="slide">
+                          <img src="./Assets/images/brand/Meal-Picture.2.png" alt="" class="img-responsive" />
+                        </div>
+                        <!-- 3 -->
+                        <div class="slide">
+                          <img src="./Assets/images/brand/Meal-Picture.3.png" alt="" class="img-responsive" />
+                        </div>
+                        <!-- 4 -->
+                        <div class="slide">
+                          <img src="./Assets/images/brand/Meal-Picture.4.png" alt="" class="img-responsive" />
+                        </div>
+                    </div>
+
+
+                    </div>
+
+                    <img class="chef-meal-arrow" src="./Assets/images/brand/Union.png" alt="">
+                    <h3>Scroll down for</h3>
+                    <button class="web-button-white">MENU</button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Key Advantage -->
+
+        <div class="key-advantage-section">
+
+            <div class="key-advantage-part-1">
+                <h1 class="main-font">key advantages</h1>
+                <ul class="key-advantage-list">
+                    <li>Ready to heat and eat meals in your fridge </li>
+                    <li>Choose from weekly new menu options</li>
+                    <li>Flavourful chef created dishes</li>
+                    <li>No contact delivery once or twice a week</li>
+                    <li>Portioned meals for all lifestyles</li>
+                    <li>Dedicated Customer Service Team</li>
+                    <li>Cancel or pause membership – no charge</li>
+                    <li>Grab and eat breakfast items</li>
+                    <li>Quick pack healthy lunches to heat and eat at work</li>
+                    <li>Heat and eat healthy dinners</li>
+                    <li>Healthy delicious snacks</li>
+                    <li>Proportioned meals to help with weight management</li>
+                </ul>
+            </div>
+
+            <div class="key-advantage-part-2">
+                <img src="./Assets/images/brand/Group-31-1.png" alt="">
+            </div>
+        </div>
+
+        <!-- Save Time -->
+
+        <div class="save-time-section">
+            <div class="save-time-inner wrapper">
+                <div class="save-time-part-1">
+                    <h1 class="main-font">Save Time</h1>
+                    <p class="para-db-font">All Your Meals is for people who want to eat healthy food without sacrificing taste and don’t want to cook every meal. Our Chef designs recipes to create dishes which you can heat and eat without losing the fresh taste of daily cooking.</p>
+                    <p class="para-b-font">Meals are prepared in our
+                        BC and Ontario Kitchens</p>
+                </div>
+                <div class="save-time-part-2">
+                    <img src="./Assets/images/brand/Image.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Menu Sneak Peek -->
+
+        <div class="menu-sneak-peak">
+
+            <div class="menu-sneak-inner wrapper">
+                <h1 class="main-font">Menu Sneak Peek</h1>
+                <p class="para-db-font">Each week we change our 25 item menu. These photos are a few of the items we’ve served our customers.</p>
+            </div>
+
+            <div class="menu-sneak-slider">
+
+                <div class="slider-main-part">
+                    <div class="center-slider">
+
+                        <div>
+                            <img src="./Assets/images/brand/Group 8.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="./Assets/images/brand/Group 9.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="./Assets/images/brand/Group 10.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="./Assets/images/brand/Group 11.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="./Assets/images/brand/Group 9.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="./Assets/images/brand/Group 11.png" alt="" srcset="">
+                        </div>
+
+                      </div>
+                  </div>
+        
+
+            
+
+           
+                
+                
+
+
+            </div>
+        </div>
+
+
+        <!-- How it works -->
+
+        <div class="how-it-works">
+            <div class="wrapper how-it-works-inner flex">
+                <div class="how-it-works-inner-part-1 flex-part-1">
+                    <h1 class="main-font">How it Works</h1>
+                    <ol class="para-db-font">
+                    <li>Become an All Your Meals Subscriber – see below to get started</li>
+                    <li>Every week you receive an email with a link to the next week’s menu</li>
+                    <li>You choose the items you want delivered to you</li>
+                    <li>Once or Twice a week your chosen meals arrive at your door</li>
+                    </ol>
+                    <p class="para-db-font">You can cancel or pause your membership at any time – No Charge</p>
+                </div>
+
+                <div class="how-it-works-inner-part-1 flex-part-2" >
+                    <!-- videos -->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Plan and Pricing -->
+
+        <div class="plan-price">
+
+            <div class="wrapper plan-price-inner">
+                <h1 class="main-font" >Plans and Pricing</h1>
+                <p class="para-db-font">Whether you don’t want to cook, want grab and go lunches to heat up at work, or you want to eat dinners you wouldn’t cook for yourself because you’re single, our meal plans offer you options. Compared to ordering from restaurants, our meals are cheaper and healthier</p>
+            </div>
+            <div class="plan-price-carts">
+                <!-- 1 -->
+                <div class="price-carts">
+                    <h1>8 - 14 Meals</h1>
+                    <p class="para-db-font">Delivery once or twice a week
+                        <br><br>Delivery charge $7.00</p>
+                    <h3>$12 - $15</h3>
+                    <h4>per Meal</h4>
+                    <p class="para-db-font">Individual and Family Sizes</p>
+                </div>
+                <!-- 2 -->
+                <div class="price-carts">
+                    <h1>15 - 21 Meals</h1>
+                    <p class="para-db-font">Delivery once or twice a week
+                        <br><br>Delivery charge $7.00</p>
+                    <h3>$10 - $13</h3>
+                    <h4>per Meal</h4>
+                    <p class="para-db-font">Individual and Family Sizes</p>
+                </div>
+                <!-- 3 -->
+                <div class="price-carts">
+                    <h1>24 - 28 Meals</h1>
+                    <p class="para-db-font">Delivery once or twice a week
+                        <br><br>Delivery charge $7.00</p>
+                    <h3>$9 - $12</h3>
+                    <h4>per Meal</h4>
+                    <p class="para-db-font">Individual and Family Sizes</p>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div class="plan-price-bottom-bg">
+            <div class="plan-price-bottom-text">
+            <p class="para-db-font">Choose from 25 dishes Weekly with weekly changing menu items and weekly meal delivery. Pause orders when going away</p>
+            <h2 class="para-db-font">CANCEL AT ANYTIME</h2>
+            </div>
+        </div>
+
+
+        <!-- Footer Start -->
+     <div class="footer-main">
+        <!-- 1 -->
+        <div class="footer-part-1">
+            <div class="footer-logo">
+                <img src="./Assets/images/logo.png" alt="" srcset="">
+            </div>
+            
+            <div class="footer-social-icons">
+                <a href=""><img src="./Assets/images/Insta.png" alt=""></a>
+                <a href=""><img src="./Assets/images/FB.png" alt=""></a>
+                <a href=""><img src="./Assets/images/LKdin.png" alt=""></a>
+                <a href=""><img src="./Assets/images/TikTok.png" alt=""></a>
+                <a href=""><img src="./Assets/images/Twitter.png" alt=""></a>
+                <a href=""><img src="./Assets/images/YTube.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="footer-part-2">
+            <h1>Brands</h1>
+            <ul class="footer-links">
+                <li><a href="">All your Meal</a></li>
+            </ul>
+        </div>
+        <!-- 3 -->
+        <div class="footer-part-3">
+            <div class="footer-part-3-inner">
+            <h1>Super Fresh Foods Inc.</h1>
+            <ul class="footer-links">
+                <li><a href="./company.html">Company</a></li>
+                <li><a href="">Approach</a></li>
+                <li><a href="">Advantage</a></li>
+                <li><a href="">Job Board</a></li>
+                <li><a href="">Executive</a></li>
+                <li><a href="./business.html">Business Developement</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Press Releases</a></li>
+                <li><a href="">Fillings</a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- 4 -->
+        <div class="footer-part-4">
+            <h1>Contact</h1>
+            <div class="footer-part-4-inner">
+                <p>Super Fresh Foods USA Inc
+                    10120 W Flamingo Ave,
+                    suite 4-1103 Las Vegas, NV 89147
+                    USA</p>
+                <img src="./Assets/images/USA Flag.png" alt="">
+                <p>hello@superfreshfoods.ca</p>
+                <p>Phone: (888) 711-0552</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-last-portion">
+        <div class="footer-last-portion-part-1">
+            <p>© 2024 superfreshfoods. All Rights Reserved</p>
+        </div>
+        <div class="footer-last-portion-part-2">
+            <div class="footer-last-text">
+                <a href="">Terms & Condition</a>
+                <a href=""> Privacy Policy</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+<!-- Footer End -->
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Slick Slider 1 -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <!-- Slick Slider 2 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./Assets/js/fresh.js"></script>
+</body>
+</html>
